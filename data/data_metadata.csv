@@ -1,4 +1,7 @@
 path,name,format,sources,metadata files
-raw/public/CHaMP_Data_MFJD.shp,CHaMP Data,shapefile,,readme.md; MFJD_Variables.csv
-raw/private/JohnDayWShed.tif,John Day Watershed LiDAR,geotiff,,readme.md; Camp_Creek_Lidar_Report_2008.pdf; 2008_OLC_Camp_Creek_Acceptance_Report.pdf
-raw/private/JohnDayWShed_OrthoPrj.tif,John Day Watershed Orthophoto,geotiff,,readme.md
+derived/public/modelinputlayers,Input layers of model,,,
+derived/public/modeloutputlayers,Output layers of model,,,
+https://drive.google.com/drive/folders/15U8ORH9BYuKuw_Iv0-MzQjIktNZBGhXB?usp=sharing,Raw data files too big for repository,,,
+derived/public/tpi,TPI layers,,,
+derived/public/turbines,Turbine layers,,,
+derived/public,Additional layers,,,

@@ -7,9 +7,10 @@ Fri 3/19
 -Main model
 -Model that preprocesses land cover data (aggregation)
 -Help! part of models
--Map input layers
+-Map input layers (ModelInfo, Maps2)
 -Map landscape metrics
--Model instructions (added how to add lakes to land cover layer) *FINALIZE
+-Report on Beech ridge 25 km landscape metrics- LandscapeMetricsWVReport
+-Model instructions (added how to add lakes to land cover layer)-ModelInfo
 -RF and GLM R code
 -Spring Symposium application due 3/23 (send blurb for approval)
 -Put everything into the repository

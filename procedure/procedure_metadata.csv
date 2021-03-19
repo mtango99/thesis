@@ -1,5 +1,5 @@
 Directory,File Name,Purpose
-protocol,Model_InfoSheet (worddoc),Steps to using and understanding models
+protocol,Model_InfoSheet.docx,Steps to using and understanding models
 code,preprocessinglandcover.model3,Model to preprocess land cover data for use in thesismodel.model3
 code,thesismodel.model3,"Thesis Model, replicates Peters et al. (2020) to calculate landscape metrics around wind turbines"
 code,Thesis_R2.R,"Outputs landscape metrics using aggregated NALCMS layer, forest layer, & TPI layer (all of which can be found in data-derived-public)"
