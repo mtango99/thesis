@@ -11,3 +11,4 @@ This study requires:
   - R Package: sp
   - R Package: rgdal
   - R Package: randomForest
+  - R Package: tidyverse

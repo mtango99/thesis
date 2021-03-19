@@ -32,7 +32,7 @@ library(rgdal)
 lsm_c_pland(landcoverraster, directions = 8)
   
 #EDGE DENSITY: class level, units: meters/hectare
-edgedensity <- lsm_c_ed(landcoverraster, count_boundary = FALSE, directions = 8)
+lsm_c_ed(landcoverraster, count_boundary = FALSE, directions = 8)
 
 #MEAN PATCH SIZE, class level, units: hectares
 lsm_c_area_mn(landcoverraster, directions = 8)

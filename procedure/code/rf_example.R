@@ -1,4 +1,10 @@
+#Sample code for random forests and GLM analysis
+#Thanks to Prof. Dave Allen for code
+#Maddie Tango
+
 require(randomForest)
+require(tidyverse)
+require(car)
 
 bat_data <- read.csv(file.choose())
 
@@ -19,8 +25,10 @@ varImpPlot(hoary_rf)
 # partial dependence plot for one of the predictors
 partialPlot(hoary_rf, pred.data = hoary_for_rf, x.var = 'Linear.density.flowlines_2o5.km')
 
-#transform particular variables (Table 9 in Peters et al. 2020), for example: 
-o	lab1<- lab1 %>%mutate(log_herb = log(herb))
+#transform particular variables using log (???? ??? (min(????) ??? 1))(Table 9 in Peters et al. 2020), for example: 
+##ex for Mean Patch Area - Wetlands @ 25 km spatial scale
+bat_data_transformed<- bat_data %>% mutate(neighbor_transformed = log(Nearest.neighbor.turbine-min(Nearest.neighbor.turbine)-1))
+###Not working? 
 
 #put top variables into GLM
 glm_model <- glm(Hoary.Bat ~ Linear.density.roads_5.km + Min.dist.land.cover.15_25.km + Point.density_2o5.km, data = hoary_for_rf) 
