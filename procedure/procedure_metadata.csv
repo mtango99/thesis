@@ -1,0 +1,6 @@
+Directory,File Name,Purpose
+protocol,1-Research_Protocol_GRASS.pdf,Create GRASS Project
+code,visualize.gxm,GRASS model for visualizing relief and slope for selected site
+code,center_line_length.gxm,"GRASS model for finding one centerline given three inputs of banks or valley edges, and calcuating its length"
+code,2-ProfileViewer.Rmd,R Notebook for visualizing longitudinal profiles and transect profiles
+protocol,3-Classifying.pdf,Classify Streams at Rosgen 2nd Level

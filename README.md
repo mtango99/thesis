@@ -4,13 +4,12 @@ NEW SCHEDULE! ignore formatting for now sorry
 
 Week 3
 Fri 3/19	
--QGIS applied to all Northeast sites
--Calculated risk value for each bat
--Map showing risk by site
--Lake differentiation that works when there are no lakes? 
--Artificial paths?
-
+-Main model
+-Model that preprocesses land cover data (aggregation)
+-Model instructions (added how to add lakes to land cover layer)
+-RF and GLM R code
 -Spring Symposium application due 3/23 (send blurb for approval)
+
 Week 6
 Fri 4/9	-Thesis draft
 Week 8
@@ -38,20 +37,13 @@ Details TBA.
 
  
 To do list:
-•	Lakes—with conditional
-o	Make fake lakes and change inputs with conditional to see if it’ll run
-•	Art paths- intersections
-•	Make up fatalities (dep var) and put through random forests, etc.
-•	Read Joe’s repro stuff
+•	Read Joe’s repro stuff & other links sent
 •	Estimator info (Huso)
 •	Research on how model can be used in other ways (roadkill, etc.)—need to do lit review (species distribution based on observations? Citizen science?)
 •	Abstract
 •	Reproducibility report in thesis (nitty gritty, with larger wrapper about general)
-o	Template
-o	Look at links he sent
+o	Template (from rosgen reproduction, for draft)
 •	Reproducibility as specific to landscape ecology and con bio
-•	GitHub Repository with ReadMe file w/calendar & to-do list
-o	Upload docs as well
 o	Create website
 o	Can use Midd data repository as well
 
