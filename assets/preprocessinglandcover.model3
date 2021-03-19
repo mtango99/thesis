@@ -307,10 +307,20 @@
     <Option type="QString" name="turbinepoints" value="TurbinesWV_da57214d_56ab_41da_9f76_dd627505becc"/>
   </Option>
   <Option name="groupBoxes"/>
-  <Option name="help"/>
+  <Option type="Map" name="help">
+    <Option type="QString" name="ALG_CREATOR" value="Madeleine Tango, replicating methods by Peters et al. (2020)"/>
+    <Option type="QString" name="ALG_DESC" value="This model reaggregates NALCMS land cover as done by Peters et al. (2020) in their paper &quot;Landscape Factors Associated with Fatalities of Migratory Tree-Roosting Bats at Wind Energy Facilities: An Initial Assessment&quot; (Kimberly Peters, Ian Evans, Elizabeth Traiger, Jon Collins, Cristen Mathews, Amanda Klehr). The model aggregates forest classes into one class, and shrubland/grassland/barren classes into an &quot;open cover&quot; class. The model also clips the raster by a 25 km buffer around the site turbines.&#xa;&#xa;Land cover classes described in metadata of NALCMS layer; source: cec.org/north-american-environmental-atlas/land-cover-30m-2015-landsat-and-rapideye/  "/>
+    <Option type="QString" name="ALG_HELP_CREATOR" value="Madeleine Tango"/>
+    <Option type="QString" name="ALG_VERSION" value=""/>
+    <Option type="QString" name="HELP_URL" value="https://github.com/mtango99/thesis"/>
+    <Option type="QString" name="LandCoverRaster" value="Source: North American Land Change Monitoring System (NALCMS)"/>
+    <Option type="QString" name="SHORT_DESCRIPTION" value=""/>
+    <Option type="QString" name="qgis:rastercalculator_3:Land Cover Raster Aggregated" value="Land cover reaggregated into forest, open cover, and the following unchanged classes: wetland, cropland, urban, water, snow/ice. "/>
+    <Option type="QString" name="turbinepoints" value="Turbine points at a given site. &#xa;Source: USGS Turbine Database"/>
+  </Option>
   <Option name="modelVariables"/>
   <Option type="QString" name="model_group" value=""/>
-  <Option type="QString" name="model_name" value="Model"/>
+  <Option type="QString" name="model_name" value="Preprocessing Land Cover Model"/>
   <Option type="Map" name="parameterDefinitions">
     <Option type="Map" name="LandCoverRaster">
       <Option type="invalid" name="default"/>

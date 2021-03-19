@@ -2255,7 +2255,39 @@
   </Option>
   <Option name="designerParameterValues"/>
   <Option name="groupBoxes"/>
-  <Option name="help"/>
+  <Option type="Map" name="help">
+    <Option type="QString" name="ALG_CREATOR" value="Madeleine Tango, replicating methods by Peters et al. (2020). "/>
+    <Option type="QString" name="ALG_DESC" value="This model attempts to replicate as close as possible the methods of Peters et al. (2020) in their paper &quot;Landscape Factors Associated with Fatalities of Migratory Tree-Roosting Bats at Wind Energy Facilities: An Initial Assessment&quot; (Kimberly Peters, Ian Evans, Elizabeth Traiger, Jon Collins, Cristen Mathews, Amanda Klehr).&#xa;&#xa;This model uses a digital elevation model, land cover, flowlines, roads, and turbine points to calculate landscape metrics (minimum distance between turbines and [land cover, roads, rivers/streams, nearest operational turbine of neighboring wind facility], point density of turbines, linear density of flowlines, and linear density of roads) and produces layers (forest cover raster and topographical position index [TPI] layer) to be imported into an R script that calculates additional landscape metrics using the 'landscapemetrics' package (developed from Fragstats). These landscape metrics can then be statistically analyzed comparing to bat fatalities at particular wind sites to determine a correlation between landscape metrics and bat fatalities. &#xa;&#xa;Make sure all layers are transformed into a regional projection (eg. State Plane; this can be done using ‘export as’ for vector layers and the warp tool for raster layers [use Nearest Neighbor for raster with classes and Bilinear for continuous data]). You may need to download for multiple counties and use the merge tool to stitch layers together. &#xa;&#xa;See Model Info Sheet for additional guidance. "/>
+    <Option type="QString" name="ALG_HELP_CREATOR" value="Madeleine Tango"/>
+    <Option type="QString" name="ALG_VERSION" value=""/>
+    <Option type="QString" name="DEP" value="3D Elevation Program (3DEP) = DEM &#xa;Download 1/3 arc-second resolution &#xa;Model derives topographical position index (TPI) from DEM at 2,000 m resolution &#xa;Source: ScienceBase "/>
+    <Option type="QString" name="HELP_URL" value="https://github.com/mtango99/thesis"/>
+    <Option type="QString" name="LandCoverRaster" value="Source: NALCMS&#xa;Can use my preprocessing model to aggregate land cover classes and add lakes"/>
+    <Option type="QString" name="SHORT_DESCRIPTION" value=""/>
+    <Option type="QString" name="buffersizeminus251000m" value="Input whichever number that correlates to the spatial scale at which you'd like to run the model."/>
+    <Option type="QString" name="flowlines" value="Use NHDFlowline.shp&#xa;Source: National Hydrography Dataset "/>
+    <Option type="QString" name="gdal:proximity_1:Proximity Map_turbines" value="Proximity map showing distance between turbines and pixel to be used to calculate the minimum distance between turbines (using local buffer) and each land cover type. "/>
+    <Option type="QString" name="gdal:proximity_3:Proximity Map_flowlines" value="Proximity map showing distance between flowlines and pixel to be used to calculate the distance from turbines (using local buffer) to the nearest river/stream. "/>
+    <Option type="QString" name="gdal:rasterize_1:Turbines_raster" value="Rasterized turbines (value: 50)"/>
+    <Option type="QString" name="gdal:rasterize_2:Roads_rasterized" value="Rasterized roads"/>
+    <Option type="QString" name="gdal:rasterize_3:Flowlines_rasterized" value="Rasterized flowlines (streams/rivers)"/>
+    <Option type="QString" name="gdal:rasterize_4:Buffer_rasterized" value="Rasterized buffer to be used as a zone when calculating zonal statistics to count turbines and measure length of roads and flowlines. "/>
+    <Option type="QString" name="native:buffer_4:Buffer" value="Buffer around turbines; depends on which spatial scale you entered. &quot;Local&quot; buffer is created by doing a 2.5 km buffer then a -2.5 km buffer. To calculate point density of turbines and linear density of roads and flowlines, you will need to add a field to the attributes using &quot;$area&quot; to calculate the landscape area. "/>
+    <Option type="QString" name="native:extractbyextent_1:Flowlines_clipped" value="Flowlines clipped to buffer"/>
+    <Option type="QString" name="native:extractbyextent_2:Roads_clipped" value="Roads clipped to buffer"/>
+    <Option type="QString" name="native:rasterlayerzonalstats_1:Statistics_turbinemindistance" value="Shows the minimum distance between the turbines (using the local buffer as a proxy) and each land cover type. "/>
+    <Option type="QString" name="native:rasterlayerzonalstats_2:Statistics_turbinecount" value="Number of turbines at site, used to calculate the point density of turbines in the landscape (landscape being the area within the buffer). "/>
+    <Option type="QString" name="native:rasterlayerzonalstats_4:Statistics_flowlinesmindistance" value="Shows the minimum distance between turbines (using the local buffer as a proxy) and the rivers/streams."/>
+    <Option type="QString" name="native:rasterlayerzonalstats_5:Statistics_roadslinelength" value="Shows the total length of roads (m2)"/>
+    <Option type="QString" name="native:rasterlayerzonalstats_6:Statistics_flowlineslinelength" value="Shows the total length of flowlines (m2)"/>
+    <Option type="QString" name="native:rasterlayerzonalstats_7:Statistics_classarea" value="Calculates the total area of each class. "/>
+    <Option type="QString" name="native:reclassifybytable_1:TPI_reclass" value="This TPI layer is divided into ridges and valleys using >+1SD = ridges and &lt;-1SD as valleys. "/>
+    <Option type="QString" name="qgis:distancetonearesthubpoints_1:Distance to Nearest non-site Turbine" value="Shows the distance to the nearest turbine of the closest neighboring facility. "/>
+    <Option type="QString" name="qgis:rastercalculator_4:NALCMS_forest" value="Forest cover (value = 20) extracted from rest of land cover. "/>
+    <Option type="QString" name="roads" value="Source: TIGER"/>
+    <Option type="QString" name="turbinepoints" value="Only the points at the site you want &#xa;Model will make buffers from these &#xa;Source: USGS "/>
+    <Option type="QString" name="turbinepointsnonsite2" value="Select points at your site then go to attribute table and click “invert selection”, export as new layer and use these points &#xa;With a local projection you may need to only select the ones that are closest because otherwise the transformation won’t work when you’re doing the distance calculation &#xa; Source: USGS "/>
+  </Option>
   <Option name="modelVariables"/>
   <Option type="QString" name="model_group" value=""/>
   <Option type="QString" name="model_name" value="Model"/>

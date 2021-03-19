@@ -19,10 +19,13 @@ varImpPlot(hoary_rf)
 # partial dependence plot for one of the predictors
 partialPlot(hoary_rf, pred.data = hoary_for_rf, x.var = 'Linear.density.flowlines_2o5.km')
 
-#talk through how to then feed this into a GLM?
+#transform particular variables (Table 9 in Peters et al. 2020), for example: 
+o	lab1<- lab1 %>%mutate(log_herb = log(herb))
+
+#put top variables into GLM
 glm_model <- glm(Hoary.Bat ~ Linear.density.roads_5.km + Min.dist.land.cover.15_25.km + Point.density_2o5.km, data = hoary_for_rf) 
 summary(glm_model)
 
-glm_model %>% coef() %>% exp()
-.	Confidence intervals: pollGLM%>% confint() %>% exp()
+glm_model %>% coef() %>% exp() #odds ratio
+glmmodel %>%  confint() %>% exp() #confidence interval
 

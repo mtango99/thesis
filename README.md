@@ -6,9 +6,13 @@ Week 3
 Fri 3/19	
 -Main model
 -Model that preprocesses land cover data (aggregation)
--Model instructions (added how to add lakes to land cover layer)
+-Help! part of models
+-Map input layers
+-Model instructions (added how to add lakes to land cover layer) *FINALIZE
 -RF and GLM R code
 -Spring Symposium application due 3/23 (send blurb for approval)
+-Put everything into the repository
+-*Raw data is in "private" because too big for GitHub (can put in Midd repository?)
 
 Week 6
 Fri 4/9	-Thesis draft
@@ -46,5 +50,7 @@ o	Template (from rosgen reproduction, for draft)
 •	Reproducibility as specific to landscape ecology and con bio
 o	Create website
 o	Can use Midd data repository as well
+
+
 
 Deadlines along the way
