@@ -1,7 +1,14 @@
 path,name,format,sources,metadata files
 derived/public/modelinputlayers,Input layers of model,,,
 derived/public/modeloutputlayers,Output layers of model,,,
-https://drive.google.com/drive/folders/15U8ORH9BYuKuw_Iv0-MzQjIktNZBGhXB?usp=sharing,Raw data files too big for repository,,,
 derived/public/tpi,TPI layers,,,
 derived/public/turbines,Turbine layers,,,
 derived/public,Additional layers,,,
+,,,,
+https://drive.google.com/drive/folders/15U8ORH9BYuKuw_Iv0-MzQjIktNZBGhXB?usp=sharing,Google Drive Link for raw data files too big for repository,,,
+googledrivelink\raw\united_states_2015 NALCMS\USA_NALCMS_2015_LC_30m_LAEA_mmu5pix_.zip,Land cover,.tif,NALCMS,in same folder
+googledrivelink\raw\uswtdbSHP Turbines USGS,Turbines,.shp,USGS,https://eerscmap.usgs.gov/uswtdb/assets/data/uswtdb_v3_3_20210114.xml
+googledrivelink\raw\WVSite\tl_2018_54019_roads.zip,"Roads (54019, 54025, 54067, 54075, 54101)",.shp,TIGER: https://www2.census.gov/geo/tiger/TIGER2018/ROADS/,cannot find metadata
+googledrivelink\raw\WVSite,3DEP files,.tif,ScienceBase,Greenbrier County: https://www.sciencebase.gov/catalog/item/5deb3277e4b02caea0f0e9bf; Nicholas County: https://www.sciencebase.gov/catalog/item/5deb328ae4b02caea0f0ea23
+googledrivelink\raw\WVSite\NHD_H_0208_HU4_Shape.zip\Shape,Flowlines (NHDFlowline.shp) [for both 0208 and 0505 regions],.shp,NHD,https://www.sciencebase.gov/catalog/item/5a58a3d4e4b00b291cd68280 & https://www.sciencebase.gov/catalog/item/5a58a4a8e4b00b291cd688b7
+googledrivelink\derived,NALCMS_WVSP,.tif,NALCMS,googledrivelink\raw\united_states_2015 NALCMS\USA_NALCMS_2015_LC_30m_LAEA_mmu5pix_.zip
