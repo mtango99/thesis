@@ -8,6 +8,7 @@ Fri 3/19
 -Model that preprocesses land cover data (aggregation)
 -Help! part of models
 -Map input layers
+-Map landscape metrics
 -Model instructions (added how to add lakes to land cover layer) *FINALIZE
 -RF and GLM R code
 -Spring Symposium application due 3/23 (send blurb for approval)
