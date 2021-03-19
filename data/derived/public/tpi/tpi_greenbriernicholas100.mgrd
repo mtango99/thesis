@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SAGA_METADATA>
+  <HISTORY saga-version="2.3.2">
+    <MODULE library="ta_morphometry" id="18" name="Topographic Position Index (TPI)">
+      <OPTION type="grid_system" id="PARAMETERS_GRID_SYSTEM" name="Grid system">
+        <CELLSIZE>100</CELLSIZE>
+        <XMIN>-506989.1436944228</XMIN>
+        <XMAX>-405789.14369442279</XMAX>
+        <YMIN>-543231.6860166118</YMIN>
+        <YMAX>-316231.6860166118</YMAX>
+      </OPTION>
+      <OPTION type="boolean" id="STANDARD" name="Standardize">TRUE</OPTION>
+      <OPTION type="range" id="RADIUS" name="Radius">0.000000; 2000.000000</OPTION>
+      <OPTION type="choice" id="DW_WEIGHTING" name="Weighting Function" index="0">no distance weighting</OPTION>
+      <INPUT type="grid" id="DEM" name="Elevation" system="PARAMETERS_GRID_SYSTEM">
+        <MODULE library="io_gdal" id="0" name="Import Raster">
+          <OPTION type="file" id="FILES" name="Files">"D:/_MADDIE_LAPTOP/SEAGATE_Thesis_Spatial_Layers/3DEPGreenbrierNicholas_reproject100.tif"</OPTION>
+          <OPTION type="text" id="SELECTION" name="Select from Multiple Bands"/>
+          <OPTION type="boolean" id="SELECT_SORT" name="Alphanumeric Sorting">TRUE</OPTION>
+          <OPTION type="boolean" id="TRANSFORM" name="Transformation">TRUE</OPTION>
+          <OPTION type="choice" id="RESAMPLING" name="Resampling" index="3">B-Spline Interpolation</OPTION>
+          <OUTPUT type="grid_list" id="GRIDS" name="Grids">3DEPGreenbrierNicholas_reproject100</OUTPUT>
+        </MODULE>
+      </INPUT>
+      <OUTPUT type="grid" id="TPI" name="Topographic Position Index">Topographic Position Index</OUTPUT>
+    </MODULE>
+  </HISTORY>
+  <SOURCE>
+    <FILE>D:\_MADDIE_LAPTOP\SEAGATE_Thesis_Spatial_Layers\tpi_greenbriernicholas100.sgrd</FILE>
+    <DATABASE></DATABASE>
+    <PROJECTION>
+      <OGC_WKT>PROJCS["unknown",GEOGCS["NAD83",DATUM["North_American_Datum_1983",SPHEROID["GRS 1980",6378137,298.2572221010042,AUTHORITY["EPSG","7019"]],AUTHORITY["EPSG","6269"]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433],AUTHORITY["EPSG","4269"]],PROJECTION["Lambert_Conformal_Conic_2SP"],PARAMETER["standard_parallel_1",38.36],PARAMETER["standard_parallel_2",45.64],PARAMETER["latitude_of_origin",42],PARAMETER["central_meridian",-75.31],PARAMETER["false_easting",0],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]]]</OGC_WKT>
+      <PROJ4>+proj=lcc +a=6378137.000000 +b=6356752.314140 +lat_1=38.36 +lat_2=45.64 +lat_0=42 +lon_0=-75.31 +x_0=0 +y_0=0 +no_defs</PROJ4>
+      <EPSG>-1</EPSG>
+    </PROJECTION>
+  </SOURCE>
+  <DESCRIPTION></DESCRIPTION>
+</SAGA_METADATA>
