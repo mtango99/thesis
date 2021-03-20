@@ -14,17 +14,21 @@ Fri 3/19
 -RF and GLM R code
 -Spring Symposium application due 3/23 (send blurb for approval)
 -Put everything into the repository
--*Raw data is in "private" because too big for GitHub (can put in Midd repository?)
+-*Raw data is in "private" because too big for GitHub (can put in Midd repository?)-- I put it in Google Drive. 
 
 Week 6
 Fri 4/9	-Thesis draft
+
 Week 8
 Fri 4/23	-Website showing models, visuals, etc. 
+
 Week 10
 Fri 5/7	-Slide deck/polished presentation
 -Thesis final draft
+
 Week 11
 Tues 5/11	-Spring symposium: presentation and defense
+
 Week 12
 Fri 5/21 
 (last day of classes)	-Thesis final final draft (last corrections after defense)
