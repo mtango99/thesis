@@ -28,6 +28,9 @@ library(rgdal)
       TPI<- raster(file.choose()) #3
       image(TPI)
 
+##For details about what each of these landscape metrics measure, use the help
+      #function by typing, e.g. '?lsm_c_pland', into the console
+
 #PERCENT AREA OF EACH CLASS, class level, units = %
 lsm_c_pland(landcoverraster, directions = 8)
   
