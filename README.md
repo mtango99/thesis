@@ -23,11 +23,12 @@ Week 8
 Fri 4/23	-Website showing models, visuals, etc. 
 
 Week 10
-Fri 5/7	-Slide deck/polished presentation
--Thesis final draft
+Wed 5/5	-Slide deck/polished presentation
+Fri 5/7 -Thesis final draft
 
 Week 11
-Tues 5/11	-Spring symposium: presentation and defense
+Tues 5/11	-Spring symposium
+defense?
 
 Week 12
 Fri 5/21 
@@ -44,19 +45,3 @@ Asynchronous Presentation Media
 Due May 5
 Details TBA.
 
-
- 
-To do list:
-•	Read Joe’s repro stuff & other links sent
-•	Estimator info (Huso)
-•	Research on how model can be used in other ways (roadkill, etc.)—need to do lit review (species distribution based on observations? Citizen science?)
-•	Abstract
-•	Reproducibility report in thesis (nitty gritty, with larger wrapper about general)
-o	Template (from rosgen reproduction, for draft)
-•	Reproducibility as specific to landscape ecology and con bio
-o	Create website
-o	Can use Midd data repository as well
-
-
-
-Deadlines along the way

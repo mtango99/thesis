@@ -2,9 +2,18 @@
 #Thanks to Prof. Dave Allen for code
 #Maddie Tango
 
+
+install.packages("randomForest")
+install.packages("tidyverse")
+install.packages("car")
+install.packages("SpatialML")
+install.packages("MuMIn")
+
 require(randomForest)
 require(tidyverse)
 require(car)
+require(SpatialML)
+require(MuMIn)
 
 bat_data <- read.csv(file.choose())
 
@@ -28,12 +37,23 @@ partialPlot(hoary_rf, pred.data = hoary_for_rf, x.var = 'Linear.density.flowline
 #transform particular variables using log (???? ??? (min(????) ??? 1))(Table 9 in Peters et al. 2020), for example: 
 ##ex for Mean Patch Area - Wetlands @ 25 km spatial scale
 bat_data_transformed<- bat_data %>% mutate(neighbor_transformed = log(Nearest.neighbor.turbine-min(Nearest.neighbor.turbine)-1))
-###Not working? 
+
 
 #put top variables into GLM
 glm_model <- glm(Hoary.Bat ~ Linear.density.roads_5.km + Min.dist.land.cover.15_25.km + Point.density_2o5.km, data = hoary_for_rf) 
 summary(glm_model)
 
+#calculate odds ratio and confidence interval
+
 glm_model %>% coef() %>% exp() #odds ratio
-glmmodel %>%  confint() %>% exp() #confidence interval
+glm_model %>%  confint() %>% exp() #confidence interval
+
+#try multiple other glm models and compare using AICc to decide which is best
+
+glm_model1 <- glm(Hoary.Bat ~ Linear.density.roads_5.km + Point.density_local + X..area.14_25.km, data = hoary_for_rf)
+glm_model2 <- glm(Hoary.Bat ~ Linear.density.roads_5.km + Point.density_local, data = hoary_for_rf)
+
+AICc(glm_model)
+AICc(glm_model1)
+AICc(glm_model2)
 
