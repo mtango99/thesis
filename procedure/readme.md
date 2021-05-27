@@ -7,8 +7,8 @@ See the example table below, and modify the table to suit your research design.
 
 directory | file name | purpose |
 -- | -- | -- |
-code | script1.R | download and preprocess data |
-protocol | survey_irb.pdf | Institutional review board protocol for survey sampling and instrument |
-protocol | mapworkshop.pdf | participatory mapping workshop protocol |
-code | script2.R | run analysis |
-code | script3.R | generate visualizations for results |
+protocol | Model_InfoSheet.pdf | detailed explanations of the models and R scripts |
+model | preprocessinglandcover.model3 | model used to preprocess NALCMS data |
+model | thesismodel.model3 | model used to do geographic analysis of data and some landscape metrics |
+code | Thesis_R2.R | code to calculate the rest of the landscape metrics |
+code | rf_example.R | code to do random forests calculation and generalized linear model with variable ranking using AICc |
